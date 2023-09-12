@@ -2,7 +2,7 @@
 const bands = require('express').Router()
 const { OP } = require('sequelize')
 const db = require('../models')
-const { Band, MeetGreet, Event } = db 
+const { Band, MeetGreet, Event, SetTime } = db 
    
 // FIND ALL BANDS
 bands.get('/', async (req, res) => {
